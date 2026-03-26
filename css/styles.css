@@ -1,0 +1,128 @@
+*, *::before, *::after { box-sizing: border-box;}
+
+* {
+    font-family: 'ClashGrotesk-Medium';
+}
+
+:root {
+    --main-white:rgb(254,254,254,1.0);
+    --main-black:rgb(43, 43, 43);
+
+    --orange: #ff8f00;
+    --red: #ec1737;
+    --blue: #4169e1;
+    --background-alpha: 90%;
+    --navbar-height: 64px;
+}
+
+html {
+    overscroll-behavior: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0px;
+    padding: 0px;
+    word-wrap: normal;
+}
+
+nav {
+    background-color: var(--main-black);
+    color: #F5F5F5;
+    height: var(--navbar-height);
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav a {
+    flex: 1;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+a {
+    color: var(--blue);
+}
+.focused-red {
+    color: var(--red);
+}
+.focused-black {
+    color: var(--main-black);
+}
+.focused-blue {
+    color: var(--blue);
+}
+.focused-orange {
+    color: var(--orange);
+}
+
+#home {       
+    scroll-margin-top: var(--navbar-height);
+}
+#about {       
+    scroll-margin-top: var(--navbar-height);
+}
+#about:focus{
+    color: var(--orange) !important;
+    background-color: var(--orange) !important;
+    font-size: 80px;
+}
+#services {       
+    scroll-margin-top: var(--navbar-height);
+}
+#contact {       
+    scroll-margin-top: var(--navbar-height);
+}
+
+.block-container {
+    display: flex;
+    width: 100%;
+}
+
+.block {
+    backdrop-filter: blur(10px);
+    --vertical-padding: 100px;
+    padding: clamp(10px, 2.5vw, 50px);
+    height: 100vh;/*calc(100vh - var(--vertical-padding)*2);*//*25 here is the same as the padding*/
+    margin: 0px;
+    align-items: center;
+    font-size: clamp(19px,1.65vw,60px);
+}
+
+.block h1 {
+    word-spacing: 100vw;
+    margin: 0px;
+}
+
+.phrases h1{
+    font-size: clamp(8px,3.35vw,80px) !important;
+}
+
+@media (max-width: 600px){
+    .block-container {
+        /*display: inline-block;*/
+        display: flex;
+        flex-direction: column;
+    }
+    .block{
+        padding: 25px;
+        width: 100vw !important;
+        font-size: clamp(16px,2vw,60px);
+    }
+    .phrases h1{
+       font-size: clamp(60px,4vw,76px) !important;
+    }
+    
+    .block-container .block {
+        order: 2;
+    }
+    .block-container .phrases {
+        order: 1;
+    }
+}
