@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter Front</title>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.8/bundles/datastar.js"></script>
+    <link rel="stylesheet" href="css/styles.css"></style>
+    <link rel="stylesheet" href="css/clash-grotesk.css"></style>
+</head>
+<body>
+
+<svg style="position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;" preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                    scale: 100%;
+                }
+                50% {
+                    scale: 75%;
+                }
+                100% {
+                    transform: rotate(360deg);
+                    scale: 100%;
+                }
+            }
+            @keyframes inv-rotate {
+                0% {
+                    transform: rotate(0deg);
+                    scale: 100%;
+                }
+                50% {
+                    scale: 75%;
+                }
+                100% {
+                    transform: rotate(-360deg);
+                    scale: 100%;
+                }
+            }
+            .out-top {
+                animation: inv-rotate 40s linear infinite;
+                transform-origin: 93px 97px;
+            }
+            .in-top {
+                animation: rotate 25s linear infinite;
+                transform-origin: 93px 97px;
+            }
+            .out-bottom {
+                animation: inv-rotate 50s linear infinite;
+                transform-origin: 5px 3px;
+            }
+            .in-bottom {
+                animation: rotate 30s linear infinite;
+                transform-origin: 5px 3px;
+            }
+        </style>
+    </defs>
+    <path fill="#3a3a3a" class="in-top" d="M 48.800639,126.76761 C 35.861871,116.30802 21.217404,99.662712 26.830507,83.046972 32.877002,65.148319 52.791294,58.304607 70.839932,56.080643 94.519944,53.162778 121.70789,52.36467 140.90069,67.712437 c 21.20302,16.955269 21.76737,54.771363 -1.09455,70.382373 -27.97402,19.10176 -67.040272,10.01747 -91.005501,-11.3272 z"/>
+    <path fill="#000000" class="out-top" d="m 83.451532,73.976687 c -9.437155,-0.682355 -22.339451,-0.06636 -26.38808,8.699903 -8.159879,17.66812 5.55749,39.65295 24.724325,42.81412 12.231333,2.01731 25.397813,3.97136 36.992133,-0.38385 9.76778,-3.6691 11.82121,-16.69605 6.72458,-25.558643 -5.14404,-8.945024 -10.93861,-18.404606 -19.87428,-23.45389 -6.803471,-3.84444 -14.837071,-1.460712 -22.178678,-2.11764 z"/>
+    <path fill="#3a3a3a" class="in-bottom" d="m -13.657138,47.928826 c 18.9151354,1.071272 39.692979,4.595753 56.53617,-4.094327 22.236566,-11.472738 23.777221,-45.5891043 4.772623,-61.92106 -30.391993,-26.117923 -83.512159,-21.726265 -106.235919,11.3401918 -8.149619,11.8589108 -1.735615,27.4449052 8.730551,37.0083432 9.993606,9.131637 22.221372,17.24258 36.196575,17.666852 z"/>
+    <path fill="#000000" class="out-bottom" d="m 1.2884093,24.479776 c 10.3566967,2.426904 23.1439827,1.33643 30.1562617,-7.096433 8.618183,-10.3640996 5.0271,-28.728339 -7.71177,-34.024444 -8.142739,-3.385292 -17.1810025,-4.713476 -25.9056758,-3.993657 -8.7290252,0.720179 -18.4341932,4.308575 -22.4744042,12.5662336 -3.557722,7.27151407 -0.873101,16.1868695 5.13198,21.7127814 5.847863,5.381238 13.4763822,8.135882 20.8036083,10.835519 z"/>
+    <circle cx="93.925041" cy="97.146057" r="1.6946379" />
+    <circle cx="5.2824779" cy="3.0921822" r="1.572704" />
+</svg>
+
+    <nav>
+        <a href="#home" data-on:click="$focused_button='home';"><div>Home</div></a>
+        <a href="#about" data-class:focused-orange="$focused_button=='about';" data-on:click="$focused_button='about';"><div>About</div></a>
+        <a href="#services" data-class:focused-red="$focused_button=='services';" data-on:click="$focused_button='services';"><div>Services</div></a>
+        <a href="#contact" data-class:focused-blue="$focused_button=='contact';" data-on:click="$focused_button='contact';"><div>Contact</div></a>
+    </nav>
+
+
+
+    <!--HOME-->
+    <div id="home" class="block-container">
+        <div class="block phrases"
+             style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent); color: var(--main-black); width: 25vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+                <h1 style="writing-mode: vertical;text-align: right;text-orientation: upright;">
+                    Alter Front
+                </h1>
+            </div>
+        </div>
+        <div class="block phrases"
+             style="background-color: color-mix(in srgb-linear, var(--main-black) var(--background-alpha), transparent); color: var(--main-white); width: 75vw;">
+            <div style="display: flex; align-items: center;justify-content: center;height: 100%;">
+                <h1>
+                    <span style="color: var(--orange);">Websites</span>
+                    <span style="color: var(--main-white);">built</span>
+                    <span style="color: var(--red);display: inline-block;transform-origin: top left;transform: rotate(15deg);text-decoration: underline;"> differently</span>
+                    <!--<span>that</span>-->
+                    <!--<span style="color: var(--blue);">matter.</span>-->
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div class="block-container">
+        <div id="about" class="block left-aligned" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+                <div style="display: inline;">
+                    <h2>Hi, I’m Lucas González.</h2>
+                    <div>
+                        <p>
+                            I have been programming and designing for 10+ years. I've worked in many fields building different kinds of digital products such as websites, games, apps, and tools.
+                        </p>
+                        <p>
+                            I worked with individuals, small businesses and corporations to launch and maintain products and solutions.
+                        </p>
+                    </div>
+                    <h2>About my stack:</h2>
+                    <div>
+                        <h3>Front-end:</h3>
+                        <p>Most developers use libraries like React or Angular, I take a more straightforward approach using a lightweight ultra-fast library called Datastar for my front-end work. It enables me faster development times and simpler architecture to achieve more maintainable code.</p>
+                        <h3>Back-end:</h3>
+                        <p>For the back-end I use PHP or Go. Again, I prefer a simpler approach that enables me to write simpler code and avoid maintainability issues later on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--orange) var(--background-alpha), transparent);width: 25vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+                <h1 style="text-align: left; display:flex; flex-direction: column;">
+                    <span style="color: var(--main-black);">Design</span>
+                    <span style="color: var(--main-white);">meets</span>
+                    <span style="color: var(--main-black);">craftsmanship<span style="color: var(--main-white);">.</span></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICES-->
+    <div class="block-container">
+        <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--red) var(--background-alpha), transparent);width: 25vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+
+                <h1 style="text-align: right;">
+                    <span style="color: var(--main-black);">Quality</span>
+                    <span style="color: var(--main-white);">carefully</span>
+                    <span style="color: var(--main-black);">crafted<span style="color: var(--main-white);">.</span></span>
+                </h1>
+
+            </div>
+        </div>
+        <div id="services" class="block" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+                <div style="display: inline;">
+                    <h2>Web builds</h2>
+                    <div style="text-align: left;">
+                        <p>Landing pages, content sites, performance, and accessibility upgrades.</p>
+                    </div>
+                    <h2>Product and application development</h2>
+                    <div>
+                        <p>Feature development, MVPs, internal tools, full-stack implementation.</p>
+                    </div>
+                    <h2>Integrations and back-end services</h2>
+                    <div>
+                        <p>APIs, third-party integrations, automation.</p>
+                    </div>
+                    <h2>Modernization and sustainment</h2>
+                    <div>
+                        <p>Refactoring, migrations, rebuilds, ongoing maintenance, and quality and reliability improvements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+    <div class="block-container">
+        <div id="contact" class="block" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
+            <div style="display: flex; align-items: center;height: 100%;text-align:right;">
+                <div style="display: inline;width:100%;">
+                    <h2>Location</h2>
+                    <div>
+                        <p>Concepción, Tucumán, Argentina</p>
+                    </div>
+                    <h2>Email</h2>
+                    <div>
+                        <a href="mailto:sehgel.dev@gmail.com"><p>sehgel.dev@gmail.com</p></a>
+                    </div>
+                    <h2>Phone</h2>
+                    <div>
+                        <p>+54 9 3865 70-9066</p>
+                    </div>
+                    <!--
+                    <h2>Social</h2>
+                    <div style="font-size: 24px;">
+                        <p></p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+                <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--blue) var(--background-alpha), transparent);width: 25vw;">
+            <div style="display: flex; align-items: center;height: 100%;">
+
+                <h1 style="text-align: left;">
+                    <span style="color: var(--main-black);">Friendly</span>
+                    <span style="color: var(--main-white);">service</span>
+                    <span style="color: var(--main-black);">done</span>
+                    <span style="color: var(--main-white);">right<span style="color: var(--main-black);">.</span></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
