@@ -1,4 +1,4 @@
-let locale = "en";
+let locale = navigator.language.split('-')[0];
 
 const translations = {
     "es": {
