@@ -31,8 +31,9 @@ nav {
     color: #F5F5F5;
     height: var(--navbar-height);
     display: flex;
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -63,10 +64,10 @@ a {
 }
 
 #home {       
-    scroll-margin-top: var(--navbar-height);
+    /*scroll-margin-top: var(--navbar-height);*/
 }
 #about {       
-    scroll-margin-top: var(--navbar-height);
+    /*scroll-margin-top: var(--navbar-height);*/
 }
 #about:focus{
     color: var(--orange) !important;
@@ -74,10 +75,10 @@ a {
     font-size: 80px;
 }
 #services {       
-    scroll-margin-top: var(--navbar-height);
+    /*scroll-margin-top: var(--navbar-height);*/
 }
 #contact {       
-    scroll-margin-top: var(--navbar-height);
+    /*scroll-margin-top: var(--navbar-height);*/
 }
 
 .block-container {
@@ -103,6 +104,8 @@ a {
 .phrases h1{
     font-size: clamp(8px,3.35vw,80px) !important;
 }
+.moto {
+}
 
 @media (max-width: 600px){
     .block-container {
@@ -124,5 +127,11 @@ a {
     }
     .block-container .phrases {
         order: 1;
+    }
+    #skewed-moto-1{
+        transform: skewY(-15deg) translateY(0ch) !important;
+    }
+    #skewed-moto-2{
+        transform: skewY(8deg) translateY(10vw) !important;
     }
 }

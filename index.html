@@ -94,7 +94,7 @@
         <div class="block phrases"
              style="color: var(--main-white); width: 75vw; padding: 0;">
             <div style="background-color: color-mix(in srgb-linear, var(--main-black) var(--background-alpha), transparent);display: flex; align-items: end;height: 50%; padding-left: 25px;">
-                <h1 style="display: flex; width: 50%; align-items: start; flex-direction: column; transform: skewY(-15deg) translateY(-2ch)">
+                <h1 id="skewed-moto-1" style="display: flex; width: 50%; align-items: start; flex-direction: column; transform: skewY(-15deg) translateY(-2ch)">
                     <span style="color: var(--main-white);" data-i18n-key="websites">Websites</span>
                     <span style="color: var(--main-white);" data-i18n-key="built">built</span>
                     <!--<span style="background-color: #FFF;color: var(--main-black);display: inline-block;transform-origin: top left;transform: rotate(5deg);">differently</span>-->
@@ -103,7 +103,7 @@
                 </h1>
             </div>
             <div style="background-color: color-mix(in srgb-linear, var(--main-black) var(--background-alpha), transparent);height: 50%; padding-left: 15px;">
-                <h1 style="display: flex;transform: skewY(8deg) translateY(2ch);">
+                <h1 id="skewed-moto-2" style="display: flex;transform: skewY(8deg) translateY(2ch);">
                     <span style="color: var(--main-white); display: inline-block;transform-origin: top left;padding-left: 10px;" data-i18n-key="differently">differently
                     </span>
                     <span style="color: var(--orange);">_</span>
@@ -118,31 +118,31 @@
         <div id="about" class="block left-aligned" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
             <div style="display: flex; align-items: center;height: 100%;">
                 <div style="display: inline;">
-                    <h2>Hi, I’m Lucas González.</h2>
+                    <h2 data-i18n-key="presentation">Hi, I’m Lucas González.</h2>
                     <div>
-                        <p>
+                        <p data-i18n-key="about-1">
                             I have been programming and designing for 10+ years. I've worked in many fields building different kinds of digital products such as websites, games, apps, and tools.
                         </p>
-                        <p>
+                        <p data-i18n-key="about-2">
                             I worked with individuals, small businesses and corporations to launch and maintain products and solutions.
                         </p>
                     </div>
-                    <h2>About my stack:</h2>
+                    <h2 data-i18n-key="my-stack">About my stack:</h2>
                     <div>
                         <h3>Front-end:</h3>
-                        <p>Most developers use libraries like React or Angular, I take a more straightforward approach using a lightweight ultra-fast library called Datastar for my front-end work. It enables me faster development times and simpler architecture to achieve more maintainable code.</p>
+                        <p data-i18n-key="my-stack-1">Most developers use libraries like React or Angular, I take a more straightforward approach using a lightweight ultra-fast library called Datastar for my front-end work. It enables me faster development times and simpler architecture to achieve more maintainable code.</p>
                         <h3>Back-end:</h3>
-                        <p>For the back-end I use PHP or Go. Again, I prefer a simpler approach that enables me to write simpler code and avoid maintainability issues later on<span style="color: var(--red);">.</span></p>
+                        <p data-i18n-key="my-stack-2">For the back-end I use PHP or Go. Again, I prefer a simpler approach that enables me to write simpler code and avoid maintainability issues later on<span style="color: var(--red);">.</span></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--orange) var(--background-alpha), transparent);width: 25vw;">
             <div style="display: flex; align-items: center;height: 100%;">
-                <h1 style="text-align: left; display:flex; flex-direction: column;">
-                    <span style="color: var(--main-black);">Design</span>
+                <h1 style="text-align: left; display: flex; flex-direction: column;" data-i18n-key="moto-1" class="moto">
+                    <span>Design</span>
                     <span style="color: var(--main-white);">meets</span>
-                    <span style="color: var(--main-black);">craftsmanship<span style="color: var(--main-white);">.</span></span>
+                    <span>craftsmanship<span style="color: var(--main-white);">.</span></span>
                 </h1>
             </div>
         </div>
@@ -151,12 +151,11 @@
     <!--SERVICES-->
     <div class="block-container">
         <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--red) var(--background-alpha), transparent);width: 25vw;">
-            <div style="display: flex; align-items: center;height: 100%;">
-
-                <h1 style="text-align: right;">
-                    <span style="color: var(--main-black);">Quality</span>
-                    <span style="color: var(--main-white);">carefully</span>
-                    <span style="color: var(--main-black);">crafted<span style="color: var(--main-white);">.</span></span>
+            <div style="display: flex; align-items: center;height: 100%;" >
+                <h1 style="text-align: right; display: flex; flex-direction: column; width: 100%; direction: rtl;" data-i18n-key="moto-2" class="moto">
+                    <span>Quality</span>
+                    <span style="color: var(--main-white); ">carefully</span>
+                    <span><span style="color: var(--main-white);">.</span>crafted</span>
                 </h1>
 
             </div>
@@ -164,21 +163,21 @@
         <div id="services" class="block" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
             <div style="display: flex; align-items: center;height: 100%;">
                 <div style="display: inline;">
-                    <h2>Web builds</h2>
+                    <h2 data-i18n-key="web-builds">Web builds</h2>
                     <div style="text-align: left;">
-                        <p>Landing pages, content sites, performance, and accessibility upgrades.</p>
+                        <p data-i18n-key="web-builds-1">Landing pages, content sites, performance, and accessibility upgrades.</p>
                     </div>
-                    <h2>Product and application development</h2>
+                    <h2 data-i18n-key="product-dev">Product and application development</h2>
                     <div>
-                        <p>Feature development, MVPs, internal tools, full-stack implementation.</p>
+                        <p data-i18n-key="prodect-dev-1">Feature development, MVPs, internal tools, full-stack implementation.</p>
                     </div>
-                    <h2>Integrations and back-end services</h2>
+                    <h2 data-i18n-key="integrations">Integrations and back-end services</h2>
                     <div>
-                        <p>APIs, third-party integrations, automation.</p>
+                        <p data-i18n-key="integrations-1">APIs, third-party integrations, automation.</p>
                     </div>
-                    <h2>Modernization and sustainment</h2>
+                    <h2 data-i18n-key="modernization">Modernization and sustainment</h2>
                     <div>
-                        <p>Refactoring, migrations, rebuilds, ongoing maintenance, and quality and reliability improvements<span style="color: var(--blue);">.</span></p>
+                        <p data-i18n-key="data-i18n-key-1">Refactoring, migrations, rebuilds, ongoing maintenance, and quality and reliability improvements<span style="color: var(--blue);">.</span></p>
                     </div>
                 </div>
             </div>
@@ -190,15 +189,15 @@
         <div id="contact" class="block" style="background-color: color-mix(in srgb-linear, var(--main-white) var(--background-alpha), transparent);width: 75vw;">
             <div style="display: flex; align-items: center;height: 100%;text-align:right;">
                 <div style="display: inline;width:100%;">
-                    <h2>Location</h2>
+                    <h2 data-i18n-key="location">Location</h2>
                     <div>
                         <p>Concepción, Tucumán, Argentina</p>
                     </div>
-                    <h2>Email</h2>
+                    <h2 data-i18n-key="email">Email</h2>
                     <div>
                         <a href="mailto:sehgel.dev@gmail.com"><p>lucas@alterfront.com</p></a>
                     </div>
-                    <h2>Phone</h2>
+                    <h2 data-i18n-key="phone">Phone</h2>
                     <div>
                         <a href="tel:+5493865709066"><p>+54 9 3865 70-9066</p></a>
                     </div>
@@ -213,12 +212,11 @@
         </div>
                 <div class="block phrases" style="background-color: color-mix(in srgb-linear, var(--blue) var(--background-alpha), transparent);width: 25vw;">
             <div style="display: flex; align-items: center;height: 100%;">
-
-                <h1 style="text-align: left;">
-                    <span style="color: var(--main-white);">Friendly</span>
-                    <span style="color: var(--main-black);">service</span>
-                    <span style="color: var(--main-white);">done</span>
-                    <span style="color: var(--main-black);">right<span style="color: var(--main-white);">.</span></span>
+                <h1 style="text-align: left; display: flex; flex-direction: column;" data-i18n-key="moto-3" class="moto">
+                    <span>Friendly</span>
+                    <span style="color: var(--main-white);">service</span>
+                    <span>done</span>
+                    <span style="color: var(--main-white);">right<span style="color: var(--main-black);">.</span></span>
                 </h1>
             </div>
         </div>
