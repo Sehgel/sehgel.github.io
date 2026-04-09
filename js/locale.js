@@ -1,5 +1,5 @@
 let locale = navigator.language.split('-')[0];
-locale = "es";//no checkin: Remove for production
+locale = "en";//no checkin: Remove for production
 
 const translations = {
     "es": {
